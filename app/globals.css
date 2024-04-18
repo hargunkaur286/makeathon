@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gradientBg{
+  background: linear-gradient(99deg, #f4f6f7 0%, #5BBCFF 100%);
+}
+.gradientbackground{
+  background: linear-gradient(99deg, #102C57 0%, #102C57 100%);
+  
+}
+
+.slick-slide > div{
+  margin: 0 10px;
+}
