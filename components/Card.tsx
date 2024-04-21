@@ -10,7 +10,27 @@ const Card = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024, // Medium devices (tablets, laptops, etc.)
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 768, // Small devices (portrait tablets and large phones)
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+      {
+        breakpoint: 480, // Small devices (landscape phones)
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
   };
   return (
     <div className='bg-black my-20'>
