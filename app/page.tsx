@@ -3,19 +3,22 @@ import Hero from "@/components/Hero";
 import Image from "next/image";
 
 import Features from "@/components/Features";
-import Navigation from "@/components/navigation";
 import Card from "@/components/Card";
+
+import Projects from "@/components/Projects";
 import Flipcard from "@/components/FlipCard";
+import Navbar from "@/components/Navbar";
+
 
 export default function Home() {
   return (
     <main >
-      
       <Hero/>
       <About/>
       <Features/>
-      <Card/>
       <Flipcard/>
+      <Card/>
+  
     </main>
   );
 }

@@ -6,6 +6,7 @@ import "./globals.css";
 
 import Footer from "@/components/Footer";
 import Navigation from "@/components/navigation";
+import Navbar from "@/components/Navbar";
 
 
 
@@ -26,7 +27,7 @@ export default function RootLayout({
        <body>
     
         <main className="relative overflow-hidden">
-        <Navigation/>
+       <Navbar/>
           {children}
         <Footer/>
         </main>
