@@ -28,14 +28,13 @@ const About = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.3 }}className='md:text-5xl text-3xl font-bold text-white mb-5 leading-normal'>
-            Take <span className='text-white'>Control of Everything</span> in Your Hands
+            Smart Money Moves
           </motion.h2>
           <motion.p
           initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.6 }} className='text-white text-lg mb-7'>
-            A paragraph is a collection of words combined together to make a longer unit than a sentence.
-            It's a set of sentences that are well-organized and coherent
+            Discover insightful perspectives on savings, investments, and mindful spending to pave the way towards financial abundance.
           </motion.p>
         </div>
         

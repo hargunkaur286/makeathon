@@ -1,3 +1,5 @@
+import Image from "next/image";
+import image from '../assets/image.png'
 const Features = () => {
     return (
         <div className='my-24 md:px-14 px-4 max-w-screen-2xl mx-auto'>
@@ -17,9 +19,9 @@ const Features = () => {
                 items-center flex justify-center items-center hover:-translate-y-4 
                 transition-all duration-300'>
                             <div>
-                                <img src='placeholder1.jpg' alt="img" />
-                                <h5 className='text-2xl font-semibold text-primary px-5 text-center
-                        mt-5'>Convenient Payment Method</h5>
+                            <Image src={image} alt="" height={500} width={500}/>
+                                <h5 className='text-xl font-semibold text-primary px-5 text-center
+                        mt-5'>Got 5 minutes? <br></br>Bite-Sized Money Lessons</h5>
                             </div>
                         </div>
 
@@ -28,8 +30,8 @@ const Features = () => {
                 transition-all duration-300'>
                             <div>
                                 <img src='placeholder2.jpg' alt="img" />
-                                <h5 className='text-2xl font-semibold text-primary px-5 text-center
-                        mt-5'>Convenient Payment Method</h5>
+                                <h5 className='text-xl font-semibold text-primary px-5 text-center
+                        mt-5'>Level Up Your Finances:<br></br> Playful Lessons, Real Results</h5>
                             </div>
                         </div>
 
@@ -38,8 +40,8 @@ const Features = () => {
                 transition-all duration-300'>
                             <div>
                                 <img src='placeholder3.jpg' alt="img" />
-                                <h5 className='text-2xl font-semibold text-primary px-5 text-center
-                        mt-5'>Convenient Payment Method</h5>
+                                <h5 className='text-xl font-semibold text-primary px-5 text-center
+                        mt-5'>Chart Your Course: <br></br> AI-Designed Roadmaps for Personal Growth</h5>
                             </div>
                         </div>
                     </div>

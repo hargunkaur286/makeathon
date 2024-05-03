@@ -24,18 +24,25 @@ const Hero = () => {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className='md:text-7xl text-4xl font-bold text-black mb-6 leading-relaxed'
+        className='md:text-5xl text-4xl font-bold text-black mb-6 leading-relaxed '
     >
-        <span className='text-white'>The Dev</span> you've been looking for all this time.
+        <span className='text-white py-7 '>From Rupees to Riches </span> Reimagine Your Relationship with Money
     </motion.h2>
     <motion.p
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.3 }}
-        className='text-lg'
+        className='text-lg text-italic'
     >
-        Why squander time and money on developers who aren't perfect for your startup?
-        Why squander time and money on developers who aren't perfect for your
+        Enter a world where every rupee holds the promise of prosperity. 
+    </motion.p>
+    <motion.p
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+        className='text-lg text-italic'
+    >
+        'From Rupees to Riches' invites you to rewrite your financial story and embrace a future filled with abundance and success.
     </motion.p>
     <br></br>
     <div className='space-x-5 space-y-100'>

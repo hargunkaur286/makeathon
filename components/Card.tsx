@@ -42,36 +42,36 @@ const Card = () => {
 
   const data = [
     {
-      name: 'Simran',
+      name: ' Retirement Planning',
       img: asset1, 
-      review: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
+      review: 'Securing Your Tomorrow,Today.',
     },
     {
-      name: 'Simran',
+      name: 'Debt Management',
       img: asset2,
-      review: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
+      review: 'From Debt to Dreams.',
     },
     {
-      name: 'Simran',
+      name: 'Saving',
       img: asset3,
-      review: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
+      review: 'Save Now, Secure Later.',
     },
     {
-      name: 'Simran',
+      name: 'Investing',
       img: asset4,
-      review: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
+      review: 'Engage, Learn, Invest.',
     },
     {
-      name: 'Simran',
+      name: 'Budgeting',
       img: asset5,
-      review: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
+      review: 'Your Blueprint for Financial Success',
     },
     // Add more data objects as needed
   ];
 
   return (
     <div className='card-color min-h-screen flex items-center justify-center'>
-      <div className='w-3/4 m-auto'>
+      <div className='w-3/4 height-7 m-auto'>
         <Slider {...settings}>
           {data.map((d, index) => (
             <div className='bg-white h-[450px] text-black rounded-xl' key={index}>
