@@ -14,8 +14,8 @@
   margin: 0 10px;
 }
 .card{
-  width: 300px;
-  height: 400px;
+  width: 250px;
+  height: 300px;
   border: 1px solid black;
   border-radius: 20px;
   margin:  50px auto;
@@ -40,4 +40,69 @@
 /* Additional CSS for other elements */
 .card-color{
   background-color: #fef9ed;
+}
+.wave-header{
+  min-height: 100vh;
+  width: 100%;
+  background-color: #fef9ed;
+  position: relative;
+}
+svg{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.flip-card {
+  background-color: transparent;
+  width: 250px;
+  height: 300px;
+  perspective: 1000px;
+  font-family: sans-serif;
+  margin: 50px auto; /* Set top and bottom margins to 50px, and left and right margins to auto */
+}
+.title {
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid blue;
+  border-radius: 1rem;
+}
+
+.flip-card-front {
+  background: linear-gradient(120deg, rgb(196, 228, 255) 60%, rgb(195, 200, 236) 88%,
+     rgb(114, 127, 186) 40%, rgba(7, 39, 219, 0.603) 48%);
+  color: blue;
+}
+
+.flip-card-back {
+  background: linear-gradient(120deg, rgb(214, 201, 251) 30%, blue 88%,
+     rgb(201, 196, 255) 40%, rgb(211, 199, 244) 78%);
+  color: white;
+  transform: rotateY(180deg);
 }
