@@ -2,63 +2,64 @@ import { Button } from "@/components/ui/button"
 import Image from 'next/image'
 
 export const Footer = () => {
-    return(
+    return (
         <footer className="hidden lg:block h-20 w-full border-t-2 border-slate-200 p-2">
             <div className="max-w-screen-lg mx-auto flex items-center justify-evenly h-full">
                 <Button size="lg" variant="ghost" className="w-full">
-                    <Image 
-                        src="/footer1.png" 
-                        alt="Financial Planning" 
-                        height={32} 
-                        width={40} 
+                    <Image
+                        src="/footer1.png"
+                        alt="Budgeting"
+                        height={32}
+                        width={40}
                         className="mr-4 rounded-md"
                     />
-                    Planning
+                    Budgeting
                 </Button>
 
                 <Button size="lg" variant="ghost" className="w-full">
-                    <Image 
-                        src="/footer2.png" 
-                        alt="Financial Planning" 
-                        height={32} 
-                        width={40} 
+                    <Image
+                        src="/footer2.png"
+                        alt="Saving"
+                        height={32}
+                        width={40}
                         className="mr-4 rounded-md"
                     />
-                    Planning
+                    Saving
                 </Button>
 
                 <Button size="lg" variant="ghost" className="w-full">
-                    <Image 
-                        src="/footer3.png" 
-                        alt="Financial Planning" 
-                        height={32} 
-                        width={40} 
+                    <Image
+                        src="/footer3.png"
+                        alt="Investing"
+                        height={32}
+                        width={40}
                         className="mr-4 rounded-md"
                     />
-                    Planning
+                    Investing
                 </Button>
 
                 <Button size="lg" variant="ghost" className="w-full">
-                    <Image 
-                        src="/footer4.png" 
-                        alt="Financial Planning" 
-                        height={32} 
-                        width={40} 
+                    <Image
+                        src="/footer4.png"
+                        alt="Debt Management"
+                        height={32}
+                        width={40}
                         className="mr-4 rounded-md"
                     />
-                    Planning
+                    Debt Management
                 </Button>
 
                 <Button size="lg" variant="ghost" className="w-full">
-                    <Image 
-                        src="/footer5.png" 
-                        alt="Financial Planning" 
-                        height={32} 
-                        width={40} 
+                    <Image
+                        src="/footer5.png"
+                        alt="Retirement Planning"
+                        height={32}
+                        width={40}
                         className="mr-4 rounded-md"
                     />
-                    Planning
+                    Retirement Planning
                 </Button>
+                
             </div>
         </footer>
     )
