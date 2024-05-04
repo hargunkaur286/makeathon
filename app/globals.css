@@ -61,7 +61,7 @@ svg{
   margin: 50px auto; /* Set top and bottom margins to 50px, and left and right margins to auto */
 }
 .title {
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: 900;
   text-align: center;
   margin: 0;
@@ -85,7 +85,7 @@ svg{
   position: absolute;
   display: flex;
   flex-direction: column;
- 
+  justify-content: center;
   width: 100%;
   height: 100%;
   -webkit-backface-visibility: hidden;
@@ -95,13 +95,15 @@ svg{
 }
 
 .flip-card-front {
-  background: #3b5eda;
-  color: blue;
+  background: linear-gradient(120deg, rgb(198, 196, 255) 60%, rgb(94, 118, 238) 88%,
+     rgb(73, 43, 242) 40%, rgba(41, 4, 150, 0.603) 48%);
+  color: #000080;
 }
 
 .flip-card-back {
-  background: #3b5eda;
-  color: white;
+  background: linear-gradient(120deg, rgb(198, 196, 255) 60%, rgb(94, 118, 238) 88%,
+  rgb(73, 43, 242) 40%, rgba(41, 4, 150, 0.603) 48%);
+  color: #000080;
   transform: rotateY(180deg);
 }
 .text-italic {

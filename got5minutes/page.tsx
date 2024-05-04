@@ -1,8 +1,7 @@
 "use client"
 import Image from 'next/image';
 import { useState, FC, ReactNode } from 'react';
-import FlipCard from './Flipcard2';
-import FlipCard2 from './FlipCard';
+import FlipCard from '../components/Flipcard2'
 import img6 from '../assets/img6.svg'
 
 type TabPanelProps = {
@@ -42,36 +41,35 @@ const TabContent: FC<TabContentProps> = ({ id, isActive, children }) => {
   );
 };
 
-const About2: FC = () => {
+const got5minutes: FC = () => {
   const [activeTab, setActiveTab] = useState<string>('stats');
   const tabData: { [key: string]: any[] } = {
     'budgeting': [
       { 
         id: 1,
-        frontTitle: "",
-        title: "“The best way to stick to a budget is to start one.” " ,
-        description: "Budgeting is actually a road map of your personal finances — an important visual guide to support financial decisions on a daily basis.Essentially, it means that by creating a budget you’ll be on your way to making room for more savings, paying off debts, or even setting up an emergency fund that’s on the top of your priority list.",
+        frontTitle: "Budgeting1",
+        title: "Card 1 for Budgeting",
+        description: "Description for Card 1",
         imageUrl: "/path/to/image1.jpg",
       },
       { 
         id: 2,
         frontTitle: "Budgeting2",
-        title: "Find Your Budgeting Fit: Explore Popular Methods",
-        description: "50/30/20 Rule: This simple approach allocates 50% to needs (rent, bills), 30% to wants (entertainment, dining), and 20% to savings/debt.",
-        description2: "Zero-Based Budget: This detailed method assigns every penny a purpose. Your income minus expenses should equal zero, ensuring you track every last cents."
-
+        title: "Card 2 for Budgeting",
+        description: "Description for Card 2",
+        imageUrl: "/path/to/image2.jpg",
       },
       { 
         id: 3,
-        title: "Snap to Save: Fast Budgeting Hacks ",
-        description: "A fantastic personal budgeting tip is to follow psychologist Edwin Locke’s SMART goal-setting method. SMART stands for: Specific, Measurable, Attainable, Relevant, and Time-bound. As long as your budgeting goals adhere to each and every one of these five descriptions, they’re realistic enough for you to start your budget.        ",
+        title: "Card 3 for Budgeting",
+        description: "Description for Card 2",
         imageUrl: "/path/to/image2.jpg",
       },
       { 
         id: 4,
-        title: "Avoiding Common Budget Pitfalls",
-        description: "Are you putting too much on credit? Look over the budget categories where you overspent, paying close attention to your credit card statements.",
-        description2: "Are you behind the times? Sometimes, a budget gets out of sync not because of unnecessary spending, but because of rising prices for necessary expenses. "
+        title: "Card 4 for Budgeting",
+        description: "Description for Card 2",
+        imageUrl: "/path/to/image2.jpg",
       },
       
     ],
@@ -188,4 +186,4 @@ const About2: FC = () => {
   );
 };
 
-export default About2;
+export default got5minutes;

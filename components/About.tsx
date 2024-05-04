@@ -9,7 +9,7 @@ import {motion} from 'framer-motion'
 
 const About = () => {
   return (
-    <div className="bg-secondary min-h-screen ">
+    <div className="bg-secondary ">
       <div className='md:px-14 p-4 max-w-screen-xl mx-auto flex flex-col md:flex-row items-center'>
 
         {/* Image Section */}

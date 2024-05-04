@@ -1,9 +1,9 @@
 "use client"
 import Image from 'next/image';
 import { useState, FC, ReactNode } from 'react';
-import FlipCard from './Flipcard2';
-import FlipCard2 from './FlipCard';
-import img6 from '../assets/img6.svg'
+import FlipCard from '@/components/Flipcard2';
+
+import img6 from '@/assets/img6.svg'
 
 type TabPanelProps = {
   label: string;
@@ -42,7 +42,7 @@ const TabContent: FC<TabContentProps> = ({ id, isActive, children }) => {
   );
 };
 
-const About2: FC = () => {
+const got5minutes: FC = () => {
   const [activeTab, setActiveTab] = useState<string>('stats');
   const tabData: { [key: string]: any[] } = {
     'budgeting': [
@@ -96,7 +96,7 @@ const About2: FC = () => {
     'retirement-planning': []
   };
   return (
-    <div className='card-color' >
+    <div className='card-color mb-20' >
         <div className="bg-primary wave-header min-h-screen relative overflow-hidden">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3b5eda" fill-opacity="1" d="M0,288L80,282.7C160,277,320,267,480,224C640,181,800,107,960,74.7C1120,43,1280,53,1360,58.7L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
             <div className='md:px-14 p-4 max-w-screen-xl mx-auto flex flex-col md:flex-row items-center'>
@@ -188,4 +188,4 @@ const About2: FC = () => {
   );
 };
 
-export default About2;
+export default got5minutes;

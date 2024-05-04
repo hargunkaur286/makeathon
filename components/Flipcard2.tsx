@@ -1,17 +1,29 @@
 import React from "react";
 
-const FlipCard: React.FC = () => {
+type FlipCardProps = {
+  frontTitle: string;
+  frontContent: string;
+  title: string;
+  description: string;
+  description2:string
+  subtitle: string;
+};
+
+const FlipCard: React.FC<FlipCardProps> = ({ frontTitle, frontContent, title, description, description2 ,subtitle }) => {
   return (
     <div className="flip-card">
       <div className="flip-card-inner">
         <div className="flip-card-front">
-          <p className="title">FLIP CARD</p>
-          <p>Hover Me</p>
+          <p className="title">{frontTitle}</p>
+          <p>{frontContent}</p>
         </div>
         <div className="flip-card-back mt-0">
-          <h2 className="title mt-10">  Financial Mindset:</h2>
-          <p className="text-sm mt-5">"Money Mindfulness": Being mindful of your spending is like yoga for your wallet - breathe in financial stability, breathe out unnecessary expenses</p>
-          <p className="text-sm">"Gratitude Attitude": Counting your financial blessings is like sprinkling glitter on your budget - it makes everything sparkle!</p>
+          <div>
+            <h2 className="title mt-7">{title}</h2>
+            <p className="text-sm mt-2">{description}</p>
+            <p className="text-sm mt-2">{description2}</p>
+            <p className="text-sm">{subtitle}</p>
+          </div>
         </div>
       </div>
     </div>
@@ -19,3 +31,4 @@ const FlipCard: React.FC = () => {
 };
 
 export default FlipCard;
+

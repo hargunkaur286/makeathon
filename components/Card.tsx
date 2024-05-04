@@ -71,10 +71,10 @@ const Card = () => {
 
   return (
     <div className='card-color min-h-screen flex items-center justify-center'>
-      <div className='w-3/4 height-7 m-auto'>
+      <div className='w-3/4 m-auto'>
         <Slider {...settings}>
           {data.map((d, index) => (
-            <div className='bg-white h-[450px] text-black rounded-xl' key={index}>
+            <div className='bg-white h-[400px] text-black rounded-xl' key={index}>
               <div className='h-56 bg-indigo-500 flex justify-center items-center rounded-t-xl'>
                 <Image src={d.img} alt='' width={100} height={100} />
               </div>
