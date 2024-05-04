@@ -16,6 +16,11 @@ const main = async () => {
 
         await db.delete(schema.courses);
         await db.delete(schema.userProgress);
+        await db.delete(schema.units);
+        await db.delete(schema.lessons);
+        await db.delete(schema.challenges);
+        await db.delete(schema.challengeOptions);
+        await db.delete(schema.challengeProgress);
 
         await db.insert(schema.courses).values([
             {
@@ -44,6 +49,83 @@ const main = async () => {
                 imageSrc: "/footer5.png",
             },
         ]);
+
+        await db.insert(schema.units).values([
+            {
+                id: 1,
+                courseId: 4, //debt management
+                title: "Unit 1",
+                description: "Learn the basics of Budgeting",
+                order: 1,
+            }
+        ]);
+
+        await db.insert(schema.lessons).values([
+            {
+                id: 1,
+                unitId: 1,
+                order: 1,
+                title: "Debt Consolidation",
+            },
+            {
+                id: 2,
+                unitId: 1,
+                order: 2,
+                title: "Negotiation and Settlement",
+            },
+        ]);
+
+        await db.insert(schema.challenges).values([
+            {
+                id: 1,
+                lessonId: 1,
+                type: "SELECT",
+                order: 1,
+                question: "Sarah has accumulated ₹50,000 in credit card debt across multiple cards, with varying interest rates. She wants to prioritize paying off her debt. What should Sarah consider doing first?",
+            },
+            {
+                id: 2,
+                lessonId: 2,
+                type: "SELECT",
+                order: 2,
+                question: "David graduated from college with ₹3,00,000 in student loan debt. He wants to lower his monthly payments. What repayment option might be suitable for David?",
+            },
+        ]);
+
+        await db.insert(schema.challengeOptions).values([
+            {
+                id: 1,
+                challengeId: 1,
+                imageSrc: "/footer1.png",
+                correct: true,
+                text: "Paying off the card with the highest interest rate first",
+                audioSrc: "",
+            },
+            {
+                id: 2,
+                challengeId: 1,
+                imageSrc: "/footer2.png",
+                correct: false,
+                text: "Making only the minimum payments on each card",
+                audioSrc: "",
+            },
+            {
+                id: 3,
+                challengeId: 1,
+                imageSrc: "/footer3.png",
+                correct: false,
+                text: "Transferring balances to a new credit card with a lower interest rate",
+                audioSrc: "",
+            },
+            {
+                id: 4,
+                challengeId: 1,
+                imageSrc: "/footer4.png",
+                correct: false,
+                text: "Ignoring the debt and focusing on saving money",
+                audioSrc: "",
+            }
+        ])
 
         console.log("Seeding finished");
     }
