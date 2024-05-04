@@ -73,6 +73,30 @@ const main = async () => {
                 order: 2,
                 title: "Negotiation and Settlement",
             },
+            {
+                id: 3,
+                unitId: 1,
+                order: 3,
+                title: "Debt Consolidation",
+            },
+            {
+                id: 4,
+                unitId: 1,
+                order: 4,
+                title: "Negotiation and Settlement",
+            },
+            {
+                id: 5,
+                unitId: 1,
+                order: 5,
+                title: "Debt Consolidation",
+            },
+            {
+                id: 6,
+                unitId: 1,
+                order: 6,
+                title: "Negotiation and Settlement",
+            },
         ]);
 
         await db.insert(schema.challenges).values([
@@ -85,7 +109,7 @@ const main = async () => {
             },
             {
                 id: 2,
-                lessonId: 2,
+                lessonId: 1,
                 type: "SELECT",
                 order: 2,
                 question: "David graduated from college with ₹3,00,000 in student loan debt. He wants to lower his monthly payments. What repayment option might be suitable for David?",
