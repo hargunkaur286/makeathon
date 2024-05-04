@@ -15,7 +15,7 @@ type Props = {
     totalCount: number;
     locked?: boolean;
     current?: boolean;
-    pencentage: number;
+    percentage: number;
 };
 
 export const LessonButton = ({
@@ -24,7 +24,7 @@ export const LessonButton = ({
     totalCount,
     locked,
     current,
-    pencentage,
+    percentage,
 }:Props) => {
     const cycleLength = 8;
     const cycleIndex = index % cycleLength;
@@ -72,7 +72,7 @@ export const LessonButton = ({
                              />
                         </div>
                         <CircularProgressbarWithChildren
-                            value= {Number.isNaN(pencentage) ? 0 : pencentage}
+                            value= {Number.isNaN(percentage) ? 0 : percentage}
                             styles = {{
                                 path: {
                                     stroke: "#4ade80",
