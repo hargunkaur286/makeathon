@@ -1,3 +1,6 @@
+## Video Link
+
+
 ## Problem Statement
 
 In India, financial literacy rates sharply differ from those in developed countries like the USA, UK, and Singapore. Shockingly, only 27% of Indian adults are financially literate, dropping to 16.7% among Indian students in their understanding of finance and money management.
@@ -9,6 +12,18 @@ To address this pressing issue, there is a need to develop comprehensive educati
 ## Solution
 
 To empower individuals and bridge this gap, we've developed a comprehensive financial literacy platform with a range of features designed for all ages and backgrounds !
+
+## Key Features
+
+<img width="866" alt="Screenshot 2024-05-05 at 7 21 32 PM" src="https://github.com/hargunkaur286/makeathon/assets/96698544/c0497010-bfd1-4c8d-9893-462335df89b0">
+
+## Tech Stack
+
+Frontend: NextJs, TypeScript, shadcn/ui
+Backend and Database: NeonDB, Drizzle ORM
+Machine Learning: Python, Flask, OpenAI, HuggingFace
+Security and Privacy: Pangea Cloud's API
+Authentication: Clerk
 
 ## Screenshots
 ![WhatsApp Image 2024-05-05 at 9 46 24 AM](https://github.com/hargunkaur286/makeathon/assets/96698544/ecd8a4f0-8b51-4945-864a-e9aff6f72832)
