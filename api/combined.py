@@ -6,9 +6,8 @@ from spotipy.oauth2 import SpotifyClientCredentials
 from googleapiclient.discovery import build
 
 
-YOUTUBE_API_KEY = 'AIzaSyB1VAa64NgEoPK_LnHT0t7RT5ZWu5SyM7U'
-spotify = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials(client_id="26cdc248797a48379af56e847b426fee",
-                                                           client_secret="ed76a3bfb8634e028291d165a5fc1ab3"))
+YOUTUBE_API_KEY = 'YOUR_API_KEY'
+spotify = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials(client_id="YOUR_CLIENT_ID",client_secret="YOUR_CLIENT_SECRET"))
 
 app = Flask(__name__)
 def get_youtube_recommendations(data):
