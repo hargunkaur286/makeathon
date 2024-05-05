@@ -20,10 +20,25 @@ To empower individuals and bridge this gap, we've developed a comprehensive fina
 ## Tech Stack
 
 Frontend: NextJs, TypeScript, shadcn/ui
+
 Backend and Database: NeonDB, Drizzle ORM
+
 Machine Learning: Python, Flask, OpenAI, HuggingFace
+
 Security and Privacy: Pangea Cloud's API
+
 Authentication: Clerk
+
+## Setting Up the project
+
+Open a new terminal in a folder and enter the following commands:
+
+```
+git clone https://github.com/hargunkaur286/makeathon.git
+npm i
+npm run dev
+
+```
 
 ## Screenshots
 ![WhatsApp Image 2024-05-05 at 9 46 24 AM](https://github.com/hargunkaur286/makeathon/assets/96698544/ecd8a4f0-8b51-4945-864a-e9aff6f72832)
