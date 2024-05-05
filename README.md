@@ -1,36 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Problem Statement
 
-## Getting Started
+In India, financial literacy rates sharply differ from those in developed countries like the USA, UK, and Singapore. Shockingly, only 27% of Indian adults are financially literate, dropping to 16.7% among Indian students in their understanding of finance and money management.
 
-First, run the development server:
+This lack of financial literacy often leads to significant challenges, such as accumulating debt, inadequate savings, and poor investment choices.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+To address this pressing issue, there is a need to develop comprehensive educational solutions that enhance financial literacy and enable individuals to take control of their financial well-being.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Solution
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+To empower individuals and bridge this gap, we've developed a comprehensive financial literacy platform with a range of features designed for all ages and backgrounds !
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Screenshots
+![WhatsApp Image 2024-05-05 at 9 46 24 AM](https://github.com/hargunkaur286/makeathon/assets/96698544/ecd8a4f0-8b51-4945-864a-e9aff6f72832)
+![WhatsApp Image 2024-05-05 at 11 58 03 AM](https://github.com/hargunkaur286/makeathon/assets/96698544/7bd31b61-ed95-4d42-862c-44e83aec0298)
+![WhatsApp Image 2024-05-05 at 9 46 24 AM (1)](https://github.com/hargunkaur286/makeathon/assets/96698544/6f2e6834-0c43-4c2d-9501-74057e4733c6)
+![WhatsApp Image 2024-05-05 at 9 46 25 AM (3)](https://github.com/hargunkaur286/makeathon/assets/96698544/10095c6e-d70d-443f-b126-c9c1e6af4f22)
+![WhatsApp Image 2024-05-05 at 9 46 26 AM (1)](https://github.com/hargunkaur286/makeathon/assets/96698544/54fa1115-39d9-4fd2-ba46-783c9b065748)
+![WhatsApp Image 2024-05-05 at 9 46 25 AM (5)](https://github.com/hargunkaur286/makeathon/assets/96698544/50d97f5e-714d-4d58-baa0-f62a7363feee)
+![WhatsApp Image 2024-05-05 at 9 46 25 AM (6)](https://github.com/hargunkaur286/makeathon/assets/96698544/d220f157-db63-40ae-a0bc-d17c25f2d6d7)
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
